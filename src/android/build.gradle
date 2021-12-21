@@ -8,9 +8,9 @@ buildscript {
   repositories {
     google()
     jcenter()
-    maven {
-      url 'https://maven.fabric.io/public'
-    }
+    //maven {
+    //  url 'https://maven.fabric.io/public'
+    //}
   }
   dependencies {
     classpath 'com.google.gms:google-services:4.3.10'
@@ -23,9 +23,9 @@ allprojects {
   repositories {
     google()
     mavenCentral()
-    maven {
-      url "https://maven.google.com"
-    }
+    //maven {
+    //  url "https://maven.google.com"
+    //}
   }
 }
 
@@ -48,6 +48,6 @@ ext.postBuildExtras = {
         // class must be used instead of id(string) to be able to apply plugin from non-root gradle file
         apply plugin: com.google.gms.googleservices.GoogleServicesPlugin
         googleServices.disableVersionCheck = true
-        apply plugin: 'io.fabric'
+        // apply plugin: 'io.fabric'
     }
 }
