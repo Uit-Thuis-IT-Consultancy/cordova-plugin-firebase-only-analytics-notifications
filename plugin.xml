@@ -50,7 +50,7 @@
       </intent-filter>
     </config-file>
     <config-file target="AndroidManifest.xml" parent="/manifest/application">
-      <service android:name="org.apache.cordova.firebase.FirebasePluginMessagingService" android:stopWithTask="false">
+      <service android:name="org.apache.cordova.firebase.FirebasePluginMessagingService" android:stopWithTask="false" android:exported="true">
         <intent-filter>
           <action android:name="com.google.firebase.MESSAGING_EVENT"/>
         </intent-filter>
