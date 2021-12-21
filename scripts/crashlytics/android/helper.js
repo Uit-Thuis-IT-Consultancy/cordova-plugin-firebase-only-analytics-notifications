@@ -107,7 +107,7 @@ module.exports = {
     // buildGradle = addDependencies(buildGradle, context);
   
     // Add Google's Maven Repo
-    buildGradle = addRepos(buildGradle);
+    // buildGradle = addRepos(buildGradle);
 
     writeRootBuildGradle(buildGradle);
   },
