@@ -104,7 +104,7 @@ module.exports = {
     var buildGradle = readRootBuildGradle();
 
     // Add Google Play Services Dependency
-    buildGradle = addDependencies(buildGradle, context);
+    // buildGradle = addDependencies(buildGradle, context);
   
     // Add Google's Maven Repo
     buildGradle = addRepos(buildGradle);
