@@ -39,6 +39,8 @@ import java.util.Set;
 // Firebase PhoneAuth
 import java.util.concurrent.TimeUnit;
 
+import me.leolin.shortcutbadger.ShortcutBadger;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.FirebaseException;
