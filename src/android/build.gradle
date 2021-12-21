@@ -29,6 +29,9 @@ repositories {
 }
 
 dependencies {
+  // Import the BoM for the Firebase platform
+  implementation platform('com.google.firebase:firebase-bom:29.0.3')
+  
   implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
   implementation 'com.google.firebase:firebase-auth'
   implementation 'com.google.firebase:firebase-core'
