@@ -33,6 +33,7 @@ dependencies {
   implementation platform('com.google.firebase:firebase-bom:29.0.3')
   implementation 'com.google.firebase:firebase-auth'
   implementation 'com.google.firebase:firebase-core'
+  implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
 }
 
 // use postBuildExtras to make sure the plugin is applied after
