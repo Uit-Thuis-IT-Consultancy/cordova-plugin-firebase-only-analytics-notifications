@@ -60,7 +60,6 @@ public class FirebasePlugin extends CordovaPlugin {
   private static ArrayList<Bundle> notificationStack = null;
   private static CallbackContext notificationCallbackContext;
   private static CallbackContext tokenRefreshCallbackContext;
-  private static CallbackContext dynamicLinkCallback;
 
   @Override
   protected void pluginInitialize() {
@@ -156,9 +155,6 @@ public class FirebasePlugin extends CordovaPlugin {
   public void onNewIntent(Intent intent) {
     super.onNewIntent(intent);
     final Bundle data = intent.getExtras();
-    if (this.dynamicLinkCallback != null) {
-      respondWithDynamicLink(intent);
-    }
     if (data != null && data.containsKey("google.message_id")) {
       data.putBoolean("tap", true);
       FirebasePlugin.sendNotification(data, this.cordova.getActivity().getApplicationContext());
